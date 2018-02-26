@@ -3,13 +3,13 @@ package com.coocaa.state;
 public class GumballMachine {
 
     State noQuarterState;
-    State hasQuarterState;
-    State soldState;
-    State soldSOutState;
-    State winnerState;
+    private State hasQuarterState;
+    private State soldState;
+    private State soldSOutState;
+    private State winnerState;
 
-    State state;
-    int count = 0;
+    private State state;
+    private int count = 0;
 
     public GumballMachine(int count) {
         this.count = count;
@@ -41,38 +41,38 @@ public class GumballMachine {
         state.refill();
     }
 
-    public int getCount() {
+    int getCount() {
         return count;
     }
 
-    public void releaseBall(){
+    void releaseBall(){
         if (count > 0){
             count = count - 1;
         }
     }
 
 
-    public State getNoQuarterState() {
+    State getNoQuarterState() {
         return noQuarterState;
     }
 
-    public State getHasQuarterState() {
+    State getHasQuarterState() {
         return hasQuarterState;
     }
 
-    public State getSoldState() {
+    State getSoldState() {
         return soldState;
     }
 
-    public State getSoldSOutState() {
+    State getSoldSOutState() {
         return soldSOutState;
     }
 
-    public State getWinnerState() {
+    State getWinnerState() {
         return winnerState;
     }
 
-    public void setState(State state) {
+    void setState(State state) {
         this.state = state;
     }
 }

@@ -5,11 +5,11 @@ import java.util.List;
 
 public class PancakeHouseMenu implements Menu {
 
-    List<MenuItem> menuItems;
+    private List<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
 
-        menuItems = new ArrayList<MenuItem>();
+        menuItems = new ArrayList<>();
 
         addItem("K&B's Pancake Breakfast");
 
@@ -21,8 +21,7 @@ public class PancakeHouseMenu implements Menu {
 
     }
 
-    public void addItem(String name)
-    {
+    private void addItem(String name){
         MenuItem menuItem = new MenuItem(name);
         menuItems.add(menuItem);
     }

@@ -5,10 +5,10 @@ import java.util.Iterator;
 
 public class CafeMenu implements Menu {
 
-    Hashtable menuItems;
+    private Hashtable<String, MenuItem> menuItems;
 
     public CafeMenu() {
-        this.menuItems = new Hashtable();
+        this.menuItems = new Hashtable<>();
 
         addItem("cafe_1");
 
@@ -20,8 +20,7 @@ public class CafeMenu implements Menu {
     }
 
 
-    public void addItem(String name)
-    {
+    private void addItem(String name){
         MenuItem menuItem = new MenuItem(name);
         menuItems.put(menuItem.name,menuItem);
     }

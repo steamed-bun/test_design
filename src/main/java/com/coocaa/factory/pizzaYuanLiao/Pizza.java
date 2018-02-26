@@ -8,8 +8,8 @@ public abstract class Pizza {
 
     @Override
     public String toString() {
-        StringBuffer result = new StringBuffer();
-        result.append("---- " + name + " ----\n");
+        StringBuilder result = new StringBuilder();
+        result.append("---- ").append(name).append(" ----\n");
         if (dough != null) {
             result.append(dough);
             result.append("\n");
@@ -23,15 +23,15 @@ public abstract class Pizza {
 
     abstract void prepare();
 
-    public void bake() {
+    void bake() {
         System.out.println("Baking " + name);
     }
 
-    public void cut() {
+    void cut() {
         System.out.println("Cutting " + name);
     }
 
-    public void box() {
+    void box() {
         System.out.println("Boxing " + name);
     }
 

@@ -11,7 +11,7 @@ public class WeatherData extends Observable {
     public WeatherData() {
     }
 
-    public void dataChange(){
+    private void dataChange(){
         setChanged();
         notifyObservers();
     }
@@ -23,15 +23,15 @@ public class WeatherData extends Observable {
         dataChange();
     }
 
-    public float getTemperature() {
+    float getTemperature() {
         return temperature;
     }
 
-    public float getHumidity() {
+    float getHumidity() {
         return humidity;
     }
 
-    public float getPressure() {
+    float getPressure() {
         return pressure;
     }
 }

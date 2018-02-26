@@ -4,8 +4,8 @@ import java.util.List;
 
 public class PancakeHouseIterator implements Iterator {
 
-    List<MenuItem> menuItems;
-    Integer position = 0 ;
+    private List<MenuItem> menuItems;
+    private Integer position = 0 ;
 
     public PancakeHouseIterator(List<MenuItem> menuItems) {
         this.menuItems = menuItems;

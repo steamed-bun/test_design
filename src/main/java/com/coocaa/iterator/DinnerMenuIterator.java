@@ -2,10 +2,10 @@ package com.coocaa.iterator;
 
 public class DinnerMenuIterator implements java.util.Iterator {
 
-    MenuItem[] menuItems;
-    Integer position = 0 ;
+    private MenuItem[] menuItems;
+    private Integer position = 0 ;
 
-    public DinnerMenuIterator(MenuItem[] menuItems) {
+    DinnerMenuIterator(MenuItem[] menuItems) {
         this.menuItems = menuItems;
     }
 

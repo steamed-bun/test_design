@@ -6,7 +6,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
-    public MyRemoteImpl() throws RemoteException {
+    private MyRemoteImpl() throws RemoteException {
     }
 
     public String sayHello() throws RemoteException {

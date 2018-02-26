@@ -4,7 +4,7 @@ public class MenuItem {
 
     String name;
 
-    public MenuItem(String name) {
+    MenuItem(String name) {
         this.name = name;
     }
 

@@ -1,10 +1,10 @@
 package com.coocaa.factory.pizzaYuanLiao;
 
-public class SubStore1Pizza2 extends Pizza {
+class SubStore1Pizza2 extends Pizza {
 
     private PizzaFactory pizzaFactory;
 
-    public SubStore1Pizza2(PizzaFactory pizzaFactory) {
+    SubStore1Pizza2(PizzaFactory pizzaFactory) {
         this.pizzaFactory = pizzaFactory;
         name = "SubStore1Pizza1";
     }

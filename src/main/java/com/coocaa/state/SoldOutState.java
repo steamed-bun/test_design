@@ -2,9 +2,9 @@ package com.coocaa.state;
 
 public class SoldOutState implements State {
 
-    GumballMachine gumballMachine;
+    private GumballMachine gumballMachine;
 
-    public SoldOutState(GumballMachine gumballMachine) {
+    SoldOutState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 

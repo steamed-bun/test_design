@@ -2,9 +2,9 @@ package com.coocaa.state;
 
 public class NoQuarterState implements State{
 
-    GumballMachine gumballMachine;
+    private GumballMachine gumballMachine;
 
-    public NoQuarterState(GumballMachine gumballMachine) {
+    NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 

@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class HasQuarterState implements State {
 
-    Random randomWinner = new Random(System.currentTimeMillis());
-    GumballMachine gumballMachine;
+    private Random randomWinner = new Random(System.currentTimeMillis());
+    private GumballMachine gumballMachine;
 
-    public HasQuarterState(GumballMachine gumballMachine) {
+    HasQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 

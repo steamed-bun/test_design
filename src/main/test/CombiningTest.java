@@ -84,7 +84,7 @@ public class CombiningTest {
         simulate(flock);
     }
 
-    void simulate4(){
+    private void simulate4(){
         //observer
         QuackObserver quackObserver = new QuackObserver();
         QuackObserver quackObserver2 = new QuackObserver();
@@ -111,7 +111,7 @@ public class CombiningTest {
 
     }
 
-    void simulate(Quackable duck){
+    private void simulate(Quackable duck){
         duck.quack();
     }
 

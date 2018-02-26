@@ -29,7 +29,7 @@ public class iterenumTest {
 
         Arrays.sort(redDucks);
 
-        System.out.println(redDucks);
+        System.out.println(redDucks.length);
 
     }
 

@@ -19,6 +19,7 @@ public class DuckTest {
 
     }
 
+    @Test
     public static void testDuck(Duck duck){
         duck.fly();
         duck.quack();

@@ -4,9 +4,9 @@ import java.util.Iterator;
 
 public class DinnerMenu implements Menu {
 
-    static final Integer MAX_SIZE = 6;
-    int index = 0;
-    MenuItem[] menuItems;
+    private static final Integer MAX_SIZE = 6;
+    private int index = 0;
+    private MenuItem[] menuItems;
 
     public DinnerMenu() {
         menuItems = new MenuItem[MAX_SIZE];
@@ -18,8 +18,7 @@ public class DinnerMenu implements Menu {
         addItem("Pasta");
     }
 
-    public void addItem(String name)
-    {
+    private void addItem(String name){
         MenuItem menuItem = new MenuItem(name);
         if (index >= MAX_SIZE) {
             System.err.println("Sorry, menu is full!  Can't add item to menu");

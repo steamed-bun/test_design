@@ -4,9 +4,9 @@ import java.util.Iterator;
 
 public class Waitress {
 
-    Menu dinnerMenu;
-    Menu pancakeHouseMenu;
-    Menu cafeMenu;
+    private Menu dinnerMenu;
+    private Menu pancakeHouseMenu;
+    private Menu cafeMenu;
 
     public Waitress(Menu dinnerMenu, Menu pancakeHouseMenu,Menu cafeMenu) {
         this.dinnerMenu = dinnerMenu;
